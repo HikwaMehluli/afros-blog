@@ -110,15 +110,16 @@ p {
         transition: var(--transition-animation);
         width: 25px;
     }
-}
 
-.slider.round {
-    border-radius: 34px;
-    
-    &:before {
-        border-radius: 50%;
+    &.round {
+        border-radius: 34px;
+        
+        &:before {
+            border-radius: 50%;
+        }
     }
 }
+
 
 
 
