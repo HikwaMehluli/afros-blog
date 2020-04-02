@@ -70,10 +70,12 @@ p {
     .dark_mode_switch {
         display: inline-block;
         height: 34px;
-        position: absolute;
-        top: -125px;
-        right: 0;
+        // position: absolute;
+        // top: -125px;
+        // right: 0;
+        // top: ;
         width: 60px;
+        max-width: 60px;
         
         input {
             display: none;
@@ -93,11 +95,13 @@ p {
     background-color: #ccc;
     bottom: 0;
     cursor: pointer;
-    left: 0;
+    left: 32px;
     position: absolute;
     right: 0;
     top: 0;
     transition: var(--transition-animation);
+
+    width: 60px;
     
     &:before {
         background-color: var(--white-color);

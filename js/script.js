@@ -1,3 +1,20 @@
+// Navigation Menu
+function openNav() {
+	document.getElementById("nav").style.width = "250px";
+	document.getElementById("main").style.marginLeft = "250px";
+	document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+  
+function closeNav() {
+	document.getElementById("nav").style.width = "0";
+	document.getElementById("main").style.marginLeft= "0";
+	document.body.style.backgroundColor = "";
+}
+
+
+
+
+
 // Get The Date
 var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 var dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
