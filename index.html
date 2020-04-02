@@ -11,27 +11,31 @@
 
 <body>
 
-    <div id="nav" class="nav_menu">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Home</a>
-        <a href="#">Category One</a>
-        <a href="#">Category Two</a>
-        <a href="#">Category Three</a>
-        <a href="#">Contribute</a>
-        <a href="#">Contact Us</a>
-        <!-- Setting Section - Avatar, Login/Logout, Social Login, Nightmode selector/toggle -->
-        <div class="dark_mode_container">
-            <label class="dark_mode_switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="slider round"></div>
-            </label>
-        </div>
-    </div>
+    <!-- Navigation -->
+    <nav id="slide-menu">
+        <ul>
+            <li class="timeline">News</li>
+            <li class="events">Events</li>
+            <li class="calendar">Calendar</li>
+            <li class="sep settings">Settings</li>
+            <li class="settings">About Us</li>
+            <li class=" settings">Contact Us</li>
+            <li class="sep logout">Logout</li>
+            <!-- Setting Section - Avatar, Login/Logout, Social Login, Nightmode selector/toggle -->
+            <div class="dark_mode_container">
+                <label class="dark_mode_switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
+                </label>
+            </div>
+        </ul>
+    </nav>
+    
 
     <div id="main">
 
         <header>
-            <div style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</div>
+            <div class="menu-trigger"></div>
 
             <h1 class="news_paper_title">
                 <a href="#">Southern Press</a>
@@ -129,8 +133,9 @@
 
     </div>
 
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/hammer.min.js"></script>
     <script src="./js/script.js"></script>
-
 </body>
 
 </html>

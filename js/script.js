@@ -1,15 +1,26 @@
 // Navigation Menu
-function openNav() {
-	document.getElementById("nav").style.width = "250px";
-	document.getElementById("main").style.marginLeft = "250px";
-	document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}
-  
-function closeNav() {
-	document.getElementById("nav").style.width = "0";
-	document.getElementById("main").style.marginLeft= "0";
-	document.body.style.backgroundColor = "";
-}
+// Inspired by Reza Khan Mohammadi
+// https://codepen.io/rezakhmf/pen/yfGLx
+(function () {
+	var $body = document.body,
+		$menu_trigger = $body.getElementsByClassName('menu-trigger')[0];
+
+	if (typeof $menu_trigger !== 'undefined') {
+		$menu_trigger.addEventListener('click', function () {
+			$body.className = ($body.className == 'menu-active') ? '' : 'menu-active';
+		});
+	}
+	var options = {
+		dragLockToAxis: true,
+		dragBlockHorizontal: true,
+		preventDefault: true
+	};
+
+	Hammer(document.getElementById('main')).on("dragleft dragright swipeleft swiperight", function (ev) {
+		$body.className = ($body.className == 'menu-active') ? '' : 'menu-active';
+	}, options);
+
+}).call(this);
 
 
 
@@ -50,6 +61,7 @@ setInterval(checkTime(), 1000);
 // Dark Mode Switcher
 // Source: https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8
 const toggleSwitch = document.querySelector('.dark_mode_switch input[type="checkbox"]');
+
 function switchTheme(e) {
 	if (e.target.checked) {
 		document.documentElement.setAttribute('data-theme', 'dark');
@@ -74,7 +86,7 @@ function switchTheme(e) {
 const currentTheme = localStorage.getItem('theme');
 if (currentTheme) {
 	document.documentElement.setAttribute('data-theme', currentTheme);
-	
+
 	if (currentTheme === 'dark') {
 		toggleSwitch.checked = true;
 	}
