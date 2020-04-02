@@ -124,7 +124,6 @@ p {
 
 
 
-
 /**************************************
     Header of Paper
 **************************************/
@@ -165,7 +164,6 @@ header {
         margin: 5px 0;
     }
 }
-
 
 
 
@@ -283,23 +281,23 @@ figure {
 .the-grid-section {
 	max-width: 1500px;
 	margin: 0 auto;
-	width: 100%;
-}
-
-.the-grid {
-    margin-bottom: 20px;
-    transition: all 0.5s;	
-}
-
-.the-grid-content {
-    padding: 10px;
+    width: 100%;
     
-    p {
-    //https://medium.com/@elad/trimming-multi-lines-in-css-5ae59d5e6d84 
-        display: -webkit-box;   
-        -webkit-line-clamp: 5;   
-        -webkit-box-orient: vertical;     
-        overflow: hidden; 
+    .the-grid {
+        margin-bottom: 20px;
+        transition: all 0.5s;
+    
+        .the-grid-content {
+            padding: 10px;
+            
+            p {
+            //https://medium.com/@elad/trimming-multi-lines-in-css-5ae59d5e6d84 
+                display: -webkit-box;   
+                -webkit-line-clamp: 5;   
+                -webkit-box-orient: vertical;     
+                overflow: hidden; 
+            }
+        }
     }
 }
 
