@@ -95,7 +95,7 @@ p {
     background-color: #ccc;
     bottom: 0;
     cursor: pointer;
-    left: 32px;
+    left: 0;
     position: absolute;
     right: 0;
     top: 0;
@@ -295,7 +295,7 @@ figure {
         transition: all 0.5s;
     
         .the-grid-content {
-            padding: 10px;
+            // padding: 10px;
             
             p {
             //https://medium.com/@elad/trimming-multi-lines-in-css-5ae59d5e6d84 
