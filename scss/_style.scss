@@ -69,11 +69,8 @@ p {
 
     .dark_mode_switch {
         display: inline-block;
-        height: 34px;
-        // position: absolute;
-        // top: -125px;
-        // right: 0;
-        // top: ;
+        height: 35px;
+        position: initial;
         width: 60px;
         max-width: 60px;
         
@@ -81,7 +78,7 @@ p {
             display: none;
         }
 
-        input:checked+.slider {
+        input:checked+.switch_knob_background {
             background-color: var(--green-color);
             
             &:before {
@@ -91,7 +88,7 @@ p {
     }
 }
 
-.slider {
+.switch_knob_background {
     background-color: #ccc;
     bottom: 0;
     cursor: pointer;
@@ -113,8 +110,8 @@ p {
         width: 25px;
     }
 
-    &.round {
-        border-radius: 34px;
+    &.switch_knob {
+        border-radius: 35px;
         
         &:before {
             border-radius: 50%;
@@ -137,15 +134,15 @@ header {
         margin: 0;
 
         a {
+            display: inline-block;
+            color: var(--primary-color);
+            cursor: pointer;
+            // Magic Number - fit text on container width. You can view the article/tutorail below, 
+            // https://css-tricks.com/fitting-text-to-a-container/#article-header-id-0
+            font-size: 10vw;
             font-family: 'Playfair Display', serif;
             font-weight: 900;
-            font-size: 60px;
             text-transform: uppercase;
-            display: inline-block;
-            line-height: 60px;
-            margin: 15px 0;
-            cursor: pointer;
-            color: var(--primary-color);
             transition: var(--transition-animation);
         
             &:hover {
@@ -155,23 +152,23 @@ header {
     }
     
     .news_paper_location {
-        font-weight: 600;
         border-bottom: 1px solid var(--primary-color);
         border-top: 1px solid var(--primary-color);
-        padding: 10px 0 10px 0;
-        margin: 20px 0;
+        font-weight: 600;
+        margin: 0 0 20px 0;
+        padding: 10px 0; 
     }
 }
 
-@media only all and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     header {
-        h1.news_paper_title a {
-            font-size: 40px;
-            line-height: 40px;
-            margin: 5px 0;
+        .news_paper_location {
+            margin: 20px 0;
+            padding: 10px 0; 
         }
     }
 }
+
 
 
 
