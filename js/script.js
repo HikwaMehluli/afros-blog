@@ -1,31 +1,3 @@
-// Navigation Menu
-// Inspired by Reza Khan Mohammadi
-// https://codepen.io/rezakhmf/pen/yfGLx
-(function () {
-	var $body = document.body,
-		$menu_trigger = $body.getElementsByClassName('menu-trigger')[0];
-
-	if (typeof $menu_trigger !== 'undefined') {
-		$menu_trigger.addEventListener('click', function () {
-			$body.className = ($body.className == 'menu-active') ? '' : 'menu-active';
-		});
-	}
-	var options = {
-		dragLockToAxis: true,
-		dragBlockHorizontal: true,
-		preventDefault: true
-	};
-
-	Hammer(document.getElementById('main')).on("dragleft dragright swipeleft swiperight", function (ev) {
-		$body.className = ($body.className == 'menu-active') ? '' : 'menu-active';
-	}, options);
-
-}).call(this);
-
-
-
-
-
 // Get The Date
 var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 var dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
