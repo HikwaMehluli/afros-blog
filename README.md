@@ -1,3 +1,7 @@
 # News Paper Theme
 
-News Paper Theme with dark mode
+This is a classic "News Paper" styled theme.
+
+## Features
+
+Light & Dark Mode user preference switcher
