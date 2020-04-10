@@ -15,7 +15,7 @@
 
 body {
     font-family: 'Crimson Text', serif;
-    font-size: 16px;
+    font-size: 17px;
     color: var(--primary-color);
     background-color: var(--white-color);
     margin: 10px;
@@ -126,11 +126,10 @@ p {
     Header of Paper
 **************************************/
 header {
-    text-align: center;
-    position: relative;
-
+    
     h1.news_paper_title {
         margin: 0;
+        text-align: center;
 
         a {
             display: inline-block;
@@ -154,7 +153,12 @@ header {
         border-bottom: 1px solid var(--primary-color);
         border-top: 1px solid var(--primary-color);
         margin: 0 0 20px 0;
-        padding: 10px 0; 
+        padding: 10px 0;
+
+        p {
+            margin: 0;
+            text-align: center;
+        }
     }
 }
 
@@ -198,8 +202,8 @@ header {
     }
     
     h3.writer {
-        font-weight: 700;
-        font-size: 12px;
+        font-size: 14px;
+        
 
         &:hover {
             color: var(--secondary-color);
