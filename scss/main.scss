@@ -44,6 +44,28 @@ p {
 
 
 
+/**************************************
+    Custom Scrool Bar 
+**************************************/
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: grey;
+}
+::-webkit-scrollbar-thumb {
+	background: #2a2a2a;
+	
+	&:hover {
+		background: #131313;
+	}
+}
+
+
+
+
+
 /***************************************************
     Create A Dark/Light Mode Switch with CSS Variables
     Source: https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8
@@ -57,6 +79,14 @@ p {
     .button a:focus,
     .button a:active {
         color: white;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: black;
+        
+        &:hover {
+            background: var(--white-color);
+        }
     }
 }
 
