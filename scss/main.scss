@@ -167,9 +167,9 @@ header {
             cursor: pointer;
             // Magic Number - fit text on container width. You can view the article/tutorail below, 
             // https://css-tricks.com/fitting-text-to-a-container/#article-header-id-0
-            font-size: 8vw;
+            font-size: 9vw;
             font-family: 'Playfair Display', serif;
-            font-weight: 900;
+            font-weight: 600;
             text-transform: uppercase;
             transition: var(--transition-animation);
         
@@ -201,7 +201,7 @@ header {
 
         h1.news_paper_title {
             a {
-                font-size: 10vw;
+                font-size: 9vw;
             }
         }
     }
