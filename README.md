@@ -46,4 +46,3 @@ Below is an example to remove SASS
 ```
 npm uninstall sass
 ```
-
