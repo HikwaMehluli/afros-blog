@@ -18,5 +18,10 @@
 	"bugs": {
 		"url": "https://gitlab.com/HikwaMehluli/news-paper-theme/issues"
 	},
-	"homepage": "https://gitlab.com/HikwaMehluli/news-paper-theme#readme"
+	"homepage": "https://gitlab.com/HikwaMehluli/news-paper-theme#readme",
+	"devDependencies": {
+		"sass": "^1.32.8",
+		"webpack": "^5.24.3",
+		"webpack-cli": "^4.5.0"
+	}
 }
