@@ -5,5 +5,10 @@ module.exports = {
 	output: {
 		filename: 'app.js',
 		path: path.resolve(__dirname, 'js')
-	}
+	},
 }
+
+new webpack.ProvidePlugin({
+	$: 'jquery',
+	jQuery: 'jquery',
+});
