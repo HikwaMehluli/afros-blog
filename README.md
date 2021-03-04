@@ -30,5 +30,10 @@ npm update --save
 ```
 
 ###### Remove module from node_modules & package.json
-npm uninstall <name of the module>
+
+Below is an example to remove SASS
+
+```
+npm uninstall sass
+```
 
