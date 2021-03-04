@@ -1,10 +1,20 @@
 # News Paper Theme
 
-This is a classic "News Paper" styled theme. The theme was created to reimagine a simple eye friendly look and feel soley focused on the information being shared. Do not get us wrong the theme still has Ad spaces, but kept at a minimum.
+This is a classic "News Paper" styled theme. The theme was created to reimagine a simple eye friendly look and feel solely focused on the information being shared.
 
 ## Features
 1. Mobile Responsive, on all major devices and modern web browsers
 2. Light & Dark Mode, takes advantage of browser "localStorage function"
+
+## Future Features to be Added
+I also plan on creating a full WordPress Theme from this theme by end of 2021,
+which will feature the following:
+1. Pagination
+2. Ad spaces
+3. Video & Audio support from - YouTube, Vimeo and Sound Cloud
+4. Contact form/s
+5. Google Maps
+6. Woocommerce support for paid subscriptions
 
 
 ## Add Dev Dependencies
