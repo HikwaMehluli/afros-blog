@@ -1,1 +1,2 @@
-import './main.js';
+import './dark-mode.js';
+import './navigation.js';

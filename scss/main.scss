@@ -181,7 +181,7 @@ header {
         }
     }
     
-    .news_paper_location {
+    .news_paper_tagline {
         border-bottom: 1px solid var(--primary-color);
         border-top: 1px solid var(--primary-color);
         margin: 0 0 20px 0;
@@ -196,7 +196,7 @@ header {
 
 @media screen and (max-width: 900px) {
     header {
-        .news_paper_location {
+        .news_paper_tagline {
             margin: 20px 0;
             padding: 10px 0; 
         }
@@ -232,8 +232,9 @@ header {
         }
     }
     
-    h3.writer {
+    h3.date {
         font-size: 14px;
+        font-weight: 500;
         
         &:hover {
             color: var(--secondary-color);
