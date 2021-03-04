@@ -11,6 +11,7 @@
     --secondary-color: #439c47;
     --white: white;
     --black: black;
+    --grey: #ccc;
     --transition: all .5s;
 }
 
@@ -53,7 +54,7 @@ p {
 }
 
 ::-webkit-scrollbar-track {
-    background: grey;
+    background: var(--grey);
 }
 ::-webkit-scrollbar-thumb {
 	background: var(--black);
@@ -119,7 +120,7 @@ p {
 }
 
 .switch_knob_background {
-    background-color: #ccc;
+    background-color: var(--grey);
     bottom: 0;
     cursor: pointer;
     position: absolute;
