@@ -9,22 +9,23 @@
 :root {
     --primary-color: #2a2a2a;
     --secondary-color: #439c47;
-    --white-color: white;
-    --transition-animation: all .5s;
+    --white: white;
+    --black: black;
+    --transition: all .5s;
 }
 
 body {
     font-family: 'Crimson Text', serif;
     font-size: 17px;
     color: var(--primary-color);
-    background-color: var(--white-color);
+    background-color: var(--white);
     margin: 10px;
 }
 
 a {
     color: var(--primary-color);
     text-decoration: none;
-    transition: var(--transition-animation);
+    transition: var(--transition);
 
     &:hover,
     &:visited,
@@ -55,7 +56,7 @@ p {
     background: grey;
 }
 ::-webkit-scrollbar-thumb {
-	background: black;
+	background: var(--black);
 	
 	&:hover {
 		background: var(--secondary-color);
@@ -73,16 +74,16 @@ p {
 [data-theme="dark"] {
     --primary-color: white;
     --secondary-color: #439c47;
-    --white-color: #2a2a2a;
+    --white: #2a2a2a;
 
     .button a:hover,
     .button a:focus,
     .button a:active {
-        color: white;
+        color: var(--white);
     }
 
     ::-webkit-scrollbar-thumb {
-        background: black;
+        background: var(--black);
         
         &:hover {
             background: var(--secondary-color);
@@ -124,18 +125,18 @@ p {
     position: absolute;
     right: 0;
     top: 0;
-    transition: var(--transition-animation);
+    transition: var(--transition);
 
     width: 60px;
     
     &:before {
-        background-color: var(--white-color);
+        background-color: var(--white);
         bottom: 5px;
         content: "";
         height: 25px;
         left: 5px;
         position: absolute;
-        transition: var(--transition-animation);
+        transition: var(--transition);
         width: 25px;
     }
 
@@ -171,7 +172,7 @@ header {
             font-family: 'Playfair Display', serif;
             font-weight: 600;
             text-transform: uppercase;
-            transition: var(--transition-animation);
+            transition: var(--transition);
         
             &:hover {
                 color: var(--secondary-color);
@@ -223,7 +224,6 @@ header {
     
     h2.title {
         font-weight: 400;
-        font-style: italic;
         font-size: 22px;
         
         &:hover {
@@ -234,7 +234,6 @@ header {
     h3.writer {
         font-size: 14px;
         
-
         &:hover {
             color: var(--secondary-color);
         }
@@ -272,7 +271,7 @@ header {
     &:active {
         background: var(--secondary-color);
         border: 1px solid var(--secondary-color);
-        color: var(--white-color);
+        color: var(--white);
     }
 }
 
@@ -288,7 +287,7 @@ figure {
     margin: 0 0 20px;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    transition: var(--transition-animation);
+    transition: var(--transition);
 
     img {
         max-width: 100%;
@@ -299,7 +298,7 @@ figure {
         font-style: italic;
         font-size: 12px;
         text-align: left;
-        transition: var(--transition-animation);
+        transition: var(--transition);
 
         &:hover {
             padding-left: 10px;
