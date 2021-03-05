@@ -1,6 +1,6 @@
 # Afros Blog
 
-This is a classic "News Paper" styled theme. The theme was created to reimagine a simple eye friendly look and feel solely focused on the information sharing, the purity of being human - our essence of being in Open Source.
+This is a classic "News Paper" styled theme. I created this as a remembrance of eye friendly UI/UX design when print was "King" - solely focused on information sharing and the purity of being human. "Our essence of being in open and being the source, lest they source us out".
 
 ## Features
 1. Mobile Responsive, on all major devices and modern web browsers
