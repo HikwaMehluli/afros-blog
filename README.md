@@ -1,6 +1,6 @@
-# News Paper Theme
+# Afros Blog
 
-This is a classic "News Paper" styled theme. The theme was created to reimagine a simple eye friendly look and feel solely focused on the information being shared.
+This is a classic "News Paper" styled theme. The theme was created to reimagine a simple eye friendly look and feel solely focused on the information sharing, the purity of being human - our essence of being in Open Source.
 
 ## Features
 1. Mobile Responsive, on all major devices and modern web browsers
