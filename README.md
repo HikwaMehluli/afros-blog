@@ -29,20 +29,3 @@ npm i sass webpack webpack-cli --save-dev
 SASS - https://sass-lang.com/install
 
 Webpack - https://webpack.js.org/guides/installation/
-
-## Updating Dev Dependencies 
-###### To update package.json in addition to the local modules, run
-
-```
-npm update --save-dev
-
-npm update --save
-```
-
-###### Remove module from node_modules & package.json
-
-Below is an example to remove SASS
-
-```
-npm uninstall sass
-```
