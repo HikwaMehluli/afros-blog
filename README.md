@@ -6,15 +6,15 @@ This is a classic "News Paper" styled theme. In remembrance of eye friendly UI/U
 2. Light & Dark Mode, takes advantage of browser "localStorage function"
 
 ## Future Features to be Added
-I also plan on creating a full WordPress Theme from this theme by end of 2021,
+I plan on creating a full WordPress Theme, Gatsby Theme and Frontity Theme by end of 2021,
 which will feature the following:
 1. Mega Menu
 2. Pagination
-3. Ad spaces
-4. Video & Audio support from - YouTube, Vimeo and Sound Cloud
+3. Advert spaces
+4. Video & Audio Player which supports - YouTube, Vimeo and Sound Cloud
 5. Contact form/s
-6. Google Maps
-7. ecommerce support for paid subscriptions
+6. Google Map Support
+7. Ecommerce support
 
 ## Add Dev Dependencies
 ###### Installation Command/s
