@@ -1,12 +1,12 @@
 {
 	"name": "afros-blog",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "This is a classic \"News Paper\" styled theme created for afrosblog",
 	"scripts": {
 		"css-prod": "sass --no-source-map --watch scss/_entry.scss:css/app.css --style compressed",
 		"css-dev": "sass --no-source-map --watch scss/_entry.scss:css/app.css",
 		"js-prod": "webpack --mode production --watch",
-		"js-dev": "webpack --mode development"
+		"js-dev": "webpack --mode development --watch"
 	},
 	"repository": {
 		"type": "git",
