@@ -8,7 +8,7 @@ This is a classic "News Paper" styled theme. In remembrance of eye friendly UI/U
 ## Future Features to be Added
 I plan on creating a full WordPress Theme, Gatsby Theme and Frontity Theme by end of 2021,
 which will feature the following:
-1. Mega Menu
+1. Navigation Menu - Sliding Mobile side menu
 2. Pagination
 3. Advert spaces
 4. Video & Audio Player which supports - YouTube, Vimeo and Sound Cloud
