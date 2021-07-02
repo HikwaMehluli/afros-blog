@@ -6,8 +6,8 @@ This is a classic "News Paper" styled theme. In remembrance of eye friendly UI/U
 2. Light & Dark Mode, takes advantage of browser "localStorage function"
 
 ## Future Features to be Added
-I plan on creating a full WordPress Theme, Gatsby Theme and Frontity Theme by end of 2021,
-which will feature the following:
+I plan on creating a full WordPress Theme, Gatsby Theme and Frontity Theme by end of 2021 early 2022,
+which will have the following features:
 1. Navigation Menu - Sliding Mobile side menu
 2. Pagination
 3. Advert spaces
