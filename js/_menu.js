@@ -6,6 +6,7 @@ function openNav() {
 
 function closeNav() {
     document.getElementById("sideMenu").style.width = "0";
+    document.body;
     // document.getElementById("main").style.marginLeft = "0";
     // document.body.style.backgroundColor = "white";
 }

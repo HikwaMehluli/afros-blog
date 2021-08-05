@@ -18,6 +18,13 @@
     transition: var(--transition);
     padding-top: 60px;
 
+    // Profile Image
+    img {
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     // Links
     a {
         padding: 8px 8px 8px 32px;
