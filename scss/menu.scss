@@ -1,4 +1,12 @@
-.sidenav {
+// TODO: Make this responsive + Add backgrond blur
+.menu-trigger {
+    position: absolute;
+    top: 100px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.nav-menu {
     height: 100%;
     width: 0;
     position: fixed;
@@ -9,40 +17,37 @@
     overflow-x: hidden;
     transition: var(--transition);
     padding-top: 60px;
-}
 
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: var(--transition);
-}
+    // Links
+    a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: var(--transition);
+    
+        &:hover {
+            color: #f1f1f1;
+        }
+    }
 
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-#main {
-    transition: margin-left var(--transition);
-    padding: 16px;
+    // Close btn
+    .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
 }
 
 @media screen and (max-height: 450px) {
-    .sidenav {
+    .nav-menu {
         padding-top: 15px;
     }
 
-    .sidenav a {
+    .nav-menu a {
         font-size: 18px;
     }
 }

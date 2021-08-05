@@ -12,16 +12,7 @@
 <body>
 
     <header>
-        
-
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-
-        <div class="dark-mode-container">
-            <label class="dark-mode-switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="switch-knob switch-knob-background"></div>
-            </label>
-        </div>
+        <div class="menu-trigger" onclick="openNav()">&#9776;</div>
 
         <h1 class="news-paper-title">
             <a href="#">Afros Blog</a>
@@ -32,15 +23,24 @@
         </div>
     </header>
 
-    <div id="mySidenav" class="sidenav">
+    <nav id="sideMenu" class="nav-menu">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Digital Arts</a>
+        <a href="#">Art & Tech</a>
+        <a href="#">Creatives</a>
+        <hr>
+        <a href="#">Login</a>
         <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-    </div>
 
-    <section id="main" class="the-grid-section">
+        <div class="dark-mode-container">
+            <label class="dark-mode-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="switch-knob switch-knob-background"></div>
+            </label>
+        </div>
+    </nav>
+
+    <main class="the-grid-section">
 
         <article class="the-grid">
             <div class="the-grid-content">
@@ -132,7 +132,7 @@
             </div>
         </article>
 
-    </section>
+    </main>
 
     <script src="./js/app.js"></script>
     <script src="./js/_menu.js"></script>
