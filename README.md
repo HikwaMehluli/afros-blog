@@ -20,10 +20,12 @@ which will have the following features:
 ###### Installation Command/s
 
 ```
-npm i sass webpack webpack-cli --save-dev
+npm i jquery sass webpack webpack-cli --save-dev
 ```
 
 ###### Source of Dependencies
+
+JQuery - https://code.jquery.com/
 
 SASS - https://sass-lang.com/install
 
