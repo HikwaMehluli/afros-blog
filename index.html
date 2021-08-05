@@ -10,25 +10,37 @@
 </head>
 
 <body>
-    
+
     <header>
+        
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
         <div class="dark-mode-container">
             <label class="dark-mode-switch" for="checkbox">
                 <input type="checkbox" id="checkbox" />
                 <div class="switch-knob switch-knob-background"></div>
             </label>
         </div>
-        
+
         <h1 class="news-paper-title">
             <a href="#">Afros Blog</a>
         </h1>
-        
+
         <div class="news-paper-tagline">
             <p>A Showcase of African Digital Arts, Technology & Creatives</p>
         </div>
     </header>
 
-    <section class="the-grid-section">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <section id="main" class="the-grid-section">
 
         <article class="the-grid">
             <div class="the-grid-content">
@@ -42,7 +54,11 @@
                         </figure>
                     </a>
                 </div>
-                <p>As their mission statement reminds, people of colour are often underrepresented in illustrations, lacking in the design process and often go unseen in visuals across the internet. 5Four saw the lack of diversity as an opportunity to create a free resource for everyone, a way to add diversity to online content by showcasing black people and people of colour in a myriad of tasks, including medical work.</p>
+                <p>As their mission statement reminds, people of colour are often underrepresented in illustrations,
+                    lacking in the design process and often go unseen in visuals across the internet. 5Four saw the lack
+                    of diversity as an opportunity to create a free resource for everyone, a way to add diversity to
+                    online content by showcasing black people and people of colour in a myriad of tasks, including
+                    medical work.</p>
                 <div class="button">
                     <a href="https://www.blackillustrations.com/" target="_blank">Read Story</a>
                 </div>
@@ -61,7 +77,9 @@
                         </figure>
                     </a>
                 </div>
-                <p>An image compression tool. Developed by <a href="https://www.thatafro.com/">thatAfro</a> This is a Simple and fast "Digital Image Compression" tool. At this point in time it processes an image instant using vue.js. I hope to include a multi upload in the distant future..</p>
+                <p>An image compression tool. Developed by <a href="https://www.thatafro.com/">thatAfro</a> This is a
+                    Simple and fast "Digital Image Compression" tool. At this point in time it processes an image
+                    instant using vue.js. I hope to include a multi upload in the distant future..</p>
                 <div class="button">
                     <a href="https://bookdash.org" target="_blank">Read Story</a>
                 </div>
@@ -75,15 +93,18 @@
                         <h2 class="title">What is an image placeholder? And how to use it</h2>
                         <h3 class="date">Friday 30th May 2021</h3>
                         <figure>
-                            <img src="./img/app/2.jpg" loading="lazy" alt="default article image" width="1280" height="720">
+                            <img src="./img/app/2.jpg" loading="lazy" alt="default article image" width="1280"
+                                height="720">
                             <figcaption><a href="https://www.behance.net/HikwaMehluli">By Mehluli Hikwa</a></figcaption>
                         </figure>
                     </a>
                 </div>
                 <p>
-                    Book Dash gathers creative volunteers to create new, African storybooks in just one day that anyone can freely print, translate and distribute, and we source the funding to print hundreds and thousands of books to give to children through partner organisations.</p>
+                    Book Dash gathers creative volunteers to create new, African storybooks in just one day that anyone
+                    can freely print, translate and distribute, and we source the funding to print hundreds and
+                    thousands of books to give to children through partner organisations.</p>
                 <div class="button">
-                <a href="https://hikwamehluli.github.io/image-compressor/" target="_blank">Read Story</a>
+                    <a href="https://hikwamehluli.github.io/image-compressor/" target="_blank">Read Story</a>
                 </div>
             </div>
         </article>
@@ -91,7 +112,8 @@
         <article class="the-grid">
             <div class="the-grid-content">
                 <div class="headline">
-                    <a href="https://www.digitalartsonline.co.uk/news/graphic-design/can-you-see-bottle-in-this-coke-ad/" target="_blank">
+                    <a href="https://www.digitalartsonline.co.uk/news/graphic-design/can-you-see-bottle-in-this-coke-ad/"
+                        target="_blank">
                         <h2 class="title">Lets plays hide and seek. Can you see the Coca Cola bottle?</h2>
                         <h3 class="date">Friday 30th May 2021</h3>
                         <figure>
@@ -100,17 +122,20 @@
                         </figure>
                     </a>
                 </div>
-                <p>A new major trend in design: 'invisible' branding. the magic of this Coke campaign from Publicis Italy comes from the optical illusion at its heart. Through the curve of that logo, and the perfect bottle-neck width of the 'Feel it' tagline, it does indeed feel like a bottle is there.</p>
+                <p>A new major trend in design: 'invisible' branding. the magic of this Coke campaign from Publicis
+                    Italy comes from the optical illusion at its heart. Through the curve of that logo, and the perfect
+                    bottle-neck width of the 'Feel it' tagline, it does indeed feel like a bottle is there.</p>
                 <div class="button">
-                    <a href="https://www.digitalartsonline.co.uk/news/graphic-design/can-you-see-bottle-in-this-coke-ad/" target="_blank">Read Story</a>
+                    <a href="https://www.digitalartsonline.co.uk/news/graphic-design/can-you-see-bottle-in-this-coke-ad/"
+                        target="_blank">Read Story</a>
                 </div>
             </div>
         </article>
 
     </section>
 
-    <!-- <script src="./js/jquery.min.js"></script> -->
     <script src="./js/app.js"></script>
+    <script src="./js/_menu.js"></script>
 </body>
 
 </html>
