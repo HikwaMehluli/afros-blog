@@ -18,18 +18,36 @@
     transition: var(--transition);
     padding-top: 60px;
 
-    // Profile Image
-    img {
-        width: 50%;
-        border-radius: 50%;
-        margin-left: auto;
-        margin-right: auto;
+    .profile {
+        span {
+            display: inline-flex;
+            padding: 10px 10px 0 5%;
+            
+            .icon-linkedin:before,
+            .icon-mail:before,
+            .icon-github:before,
+            .icon-twitter:before,
+            .icon-facebook:before,
+            .icon-instagram:before { 
+                color: white
+            }
+        }
+
+        // Profile Image
+        img {
+            width: 50%;
+            border-radius: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
+    
 
     // Links
     a {
         padding: 10px 5%;
         text-decoration: none;
+        // text-align: center;
         font-size: 18px;
         color: #afafaf;
         display: block;
