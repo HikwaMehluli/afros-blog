@@ -46,6 +46,15 @@
 .icon-instagram:before { content: '\f32d'; } /* '' */
 
 
+:root {
+    --primary-color: #2a2a2a;
+    --secondary-color: #439c47;
+    --white: white;
+    --black: black;
+    --grey: #ccc;
+    --transition: all .5s;
+}
+
 @import './main.scss';
 @import './grid.scss';
 @import './menu.scss';
