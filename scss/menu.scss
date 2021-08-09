@@ -1,15 +1,15 @@
 // TODO: Make this responsive + Add backgrond blur
 .menu-trigger {
     position: absolute;
-    top: 100px;
+    top: 3vw;
     font-size: 40px;
     cursor: pointer;
 }
 
 // TODO: Sort night mode
 .nav-menu {
-    background-color: var(--primary-color);
-    // background-color: var(--black);
+    background-color: var(--white);
+    // background-color: #2a2a2a;
     height: 100%;
     width: 0;
     padding-top: 60px;
@@ -57,13 +57,11 @@
 
     // Links
     a {
-        color: var(--white);
+        color: var(--primary-color);
         display: block;
         padding: 10px 5%;
         text-decoration: none;
-        // text-align: center;
         font-size: 18px;
-        
         transition: var(--transition);
     
         &:hover {
