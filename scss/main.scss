@@ -98,6 +98,7 @@ img {
 .dark-mode-container {
     display: flex;
     position: relative;
+    margin-top: 20px;
     align-items: center;
 
     .dark-mode-switch {
@@ -202,12 +203,6 @@ header {
             margin: 20px 0;
             padding: 10px 0; 
         }
-
-        // h1.news-paper-title {
-        //     a {
-        //         font-size: 9vw;
-        //     }
-        // }
     }
 }
 

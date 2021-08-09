@@ -1,4 +1,4 @@
-// TODO: Make this responsive + Add backgrond blur
+// TODO: Add backgrond blur
 .menu-trigger {
     position: absolute;
     top: 3vw;
@@ -6,10 +6,8 @@
     cursor: pointer;
 }
 
-// TODO: Sort night mode
 .nav-menu {
     background-color: var(--white);
-    // background-color: #2a2a2a;
     height: 100%;
     width: 0;
     padding-top: 60px;
@@ -20,22 +18,17 @@
     transition: var(--transition);
     z-index: 1;
 
-
     .profile {
-
-        hr {
-            width: 95%;
-        }
         
         // Profile Image
         img {
-            width: 50%;
             border-radius: 50%;
+            width: 50%;
+            // padding-bottom: 20px;
             margin-left: auto;
             margin-right: auto;
         }
     }
-    
 
     // Links
     a {
@@ -48,7 +41,7 @@
     
         &:hover {
             color: var(--secondary-color);
-        }
+        }        
     }
 
     // Close btn
