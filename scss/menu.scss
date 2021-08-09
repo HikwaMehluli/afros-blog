@@ -23,28 +23,10 @@
 
     .profile {
 
-        // Social Networks
-        span {
-            display: inline-flex;
-            padding: 10px 10px 0 5%;
-            
-            // a {
-            //     .icon-linkedin:before,
-            //     .icon-mail:before,
-            //     .icon-github:before,
-            //     .icon-twitter:before,
-            //     .icon-facebook:before,
-            //     .icon-instagram:before { 
-            //         color: var(--white);
-
-            //         &:hover {
-            //             color: var(--secondary-color);
-            //         }
-
-            //     }
-            // }                
+        hr {
+            width: 95%;
         }
-
+        
         // Profile Image
         img {
             width: 50%;
