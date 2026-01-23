@@ -1,0 +1,45 @@
+header {
+
+    h1.news-paper-title {
+        margin: 0;
+        text-align: center;
+
+        a {
+            display: inline-block;
+            color: var(--primary-color);
+            cursor: pointer;
+            // Magic Number - fit text on container width. You can view the article/tutorail below, 
+            // https://css-tricks.com/fitting-text-to-a-container/#article-header-id-0
+            font-size: 8vw;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: var(--transition);
+
+            &:hover {
+                color: var(--secondary-color);
+            }
+        }
+    }
+
+    .news-paper-tagline {
+        border-bottom: 1px solid var(--primary-color);
+        border-top: 1px solid var(--primary-color);
+        margin: 0 0 20px 0;
+        padding: 10px 0;
+
+        p {
+            margin: 0;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    header {
+        .news-paper-tagline {
+            margin: 20px 0;
+            padding: 10px 0;
+        }
+    }
+}

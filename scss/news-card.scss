@@ -1,0 +1,95 @@
+.news-card {
+    display: block;
+    margin: 0 auto;
+
+    h2.title,
+    h3.date {
+        font-family: 'Playfair Display', serif;
+        line-height: normal;
+        text-align: center;
+        // transition: var(--transition);
+    }
+
+    h2.title {
+        font-weight: 400;
+        font-size: 22px;
+
+        &:hover {
+            color: var(--secondary-color);
+        }
+    }
+
+    h3.date {
+        font-size: 14px;
+        font-weight: 500;
+
+        &:hover {
+            color: var(--secondary-color);
+        }
+
+        &:before {
+            border-top: 1px solid var(--primary-color);
+            content: '';
+            width: 100px;
+            height: 7px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        &:after {
+            border-bottom: 1px solid var(--primary-color);
+            content: '';
+            width: 100px;
+            height: 10px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    figure {
+        cursor: pointer;
+        margin: 0 0 20px;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        transition: var(--transition);
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 5px;
+        }
+
+        figcaption {
+            font-style: italic;
+            font-size: 14px;
+            text-align: left;
+            transition: var(--transition);
+
+            &:hover {
+                padding-left: 10px;
+            }
+        }
+
+        &:hover {
+            -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+        }
+    }
+
+    .button a {
+        display: inline-block;
+        background-color: transparent;
+        border: 1px solid var(--primary-color);
+        color: var(--primary-color);
+        // font-size: 16px;
+        padding: 10px 15px;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: var(--primary-color);
+            border: 1px solid var(--primary-color);
+            color: var(--white);
+        }
+    }
+}

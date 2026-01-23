@@ -1,5 +1,3 @@
-// Dark Mode Switcher
-// Source: https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8
 const toggleSwitch = document.querySelector('.dark-mode-switch input[type="checkbox"]');
 
 function switchTheme(e) {
