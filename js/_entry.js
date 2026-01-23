@@ -1,5 +1,5 @@
 import './theme-switcher.js';
-// import './menu.js';
+// import './navigation.js';
 
 console.log('%c Afros Blog - thatAfro', 'font-size: 12px;');
 

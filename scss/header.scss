@@ -1,4 +1,7 @@
 header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     h1.news-paper-title {
         margin: 0;
@@ -8,7 +11,7 @@ header {
             display: inline-block;
             color: var(--primary-color);
             cursor: pointer;
-            // Magic Number - fit text on container width. You can view the article/tutorail below, 
+            // Magic Number - fit text on container width. You can view the article/tutorail below,
             // https://css-tricks.com/fitting-text-to-a-container/#article-header-id-0
             font-size: 8vw;
             font-family: 'Playfair Display', serif;

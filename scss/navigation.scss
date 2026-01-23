@@ -1,25 +1,139 @@
-// TODO: Add background blur
+// Navigation menu styles
 .menu-trigger {
     position: absolute;
     top: 3vw;
-    font-size: 40px;
+    left: 15px; // Add left positioning to ensure it's visible
+    font-size: 24px;
     cursor: pointer;
+    z-index: 30; // Higher z-index to ensure it's always on top
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: top 0.3s ease; // Smooth transition for position
+
+    // Hamburger lines
+    span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: var(--primary-color);
+        margin: 2px 0;
+        transition: 0.3s;
+        border-radius: 2px;
+    }
+
+    // Hover effect for hamburger
+    &:hover {
+        span {
+            background-color: var(--secondary-color);
+        }
+    }
+}
+
+// Ensure menu trigger stays in place when nav is open
+body.nav-open {
+    .menu-trigger {
+        top: 3vw; // Maintain consistent position
+        z-index: 30; // Ensure it stays on top even when nav is open
+    }
+}
+
+// Make sure header stays in place and doesn't shift
+header {
+    position: relative; // Keep original positioning
+    z-index: 15; // Just below menu-trigger
+    padding-left: 50px; // Add padding to account for menu trigger space
+}
+
+// Account for scrollbar width when navigation is open to prevent layout shift
+body.nav-open {
+    padding-right: calc(100vw - 100%); // Compensate for scrollbar width
+    overflow: hidden;
+}
+
+// Active state for hamburger when menu is open (transforms to X)
+.menu-trigger.active {
+    span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    span:nth-child(2) {
+        opacity: 0;
+    }
+
+    span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
 }
 
 .nav-menu {
     background-color: var(--white);
     height: 100%;
-    width: 0;
+    width: 250px;
+    max-width: 250px;
     padding-top: 60px;
     position: fixed;
     top: 0;
     left: 0;
+    transform: translateX(-100%); // Start off-screen for slide effect using transform
     overflow-x: hidden;
-    transition: var(--transition);
-    z-index: 1;
+    transition: transform 0.3s ease; // Use transform for smoother, more performant animation
+    z-index: 20; // Lower than menu-trigger to ensure menu trigger is visible
+
+    .close-menu-trigger {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 25; // Higher than nav content but inside nav
+        width: 30px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        // Hamburger lines (will become X when active)
+        span {
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: var(--primary-color);
+            margin: 2px 0;
+            transition: 0.3s;
+            border-radius: 2px;
+        }
+
+        // Hover effect
+        &:hover {
+            span {
+                background-color: var(--secondary-color);
+            }
+        }
+    }
+
+    // Active state for close button inside nav (shows as X)
+    &.active {
+        .close-menu-trigger {
+            span:nth-child(1) {
+                transform: rotate(-45deg) translate(-3px, 5px);
+            }
+
+            span:nth-child(2) {
+                opacity: 0;
+            }
+
+            span:nth-child(3) {
+                transform: rotate(45deg) translate(-5px, -7px);
+            }
+        }
+    }
 
     .profile {
-        
         // Profile Image
         img {
             border-radius: 50%;
@@ -38,19 +152,33 @@
         text-decoration: none;
         font-size: 18px;
         transition: var(--transition);
-    
+
         &:hover {
             color: var(--secondary-color);
-        }        
+        }
     }
 
-    // Close btn
-    .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 50px;
-        margin-left: 50px;
+}
+
+// Active state for nav menu when open
+.nav-menu.active {
+    transform: translateX(0); // Slide in from left using transform
+}
+
+// Mobile responsive: 100% width on screens 400px and below
+@media screen and (max-width: 400px) {
+    .nav-menu {
+        width: 100%;
+        max-width: 100%;
+        transform: translateX(-100%); // Full width off-screen using transform
+
+        &.active {
+            transform: translateX(0); // Slide in completely using transform
+        }
+    }
+
+    header {
+        padding-left: 50px; // Same padding on mobile
     }
 }
 
@@ -62,4 +190,35 @@
     .nav-menu a {
         font-size: 18px;
     }
+}
+
+// Overlay effect when nav is open
+.content-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 5; // Below the nav-menu but above content
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.content-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+// Apply blur to main and header when nav is open
+main,
+header {
+    transition: filter 0.3s ease;
+}
+
+main.blurred,
+header.blurred {
+    filter: blur(3px);
 }
