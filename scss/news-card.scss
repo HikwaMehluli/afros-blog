@@ -7,7 +7,6 @@
         font-family: 'Playfair Display', serif;
         line-height: normal;
         text-align: center;
-        // transition: var(--transition);
     }
 
     h2.title {
@@ -44,6 +43,13 @@
             display: block;
             margin: 0 auto;
         }
+    }
+
+    p {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
 
     figure {

@@ -1,33 +1,21 @@
 /***************************************************
-    Responsive Framework
+    Responsive Framework inspired by this pen
     https://codepen.io/HikwaMehluli/full/qeNOVv
 ***************************************************/
-.the-grid-section {
+.grid-section {
 	max-width: 1400px;
 	margin: 0 auto;
     width: 100%;
     
-    .the-grid {
+    .grid-item {
         margin-bottom: 40px;
         transition: all 0.5s;
-    
-        .the-grid-content {
-            // padding: 10px;
-            
-            p {
-                // Trimming multi-lines with ellipsis
-                display: -webkit-box;   
-                -webkit-line-clamp: 3;   
-                -webkit-box-orient: vertical;     
-                overflow: hidden; 
-            }
-        }
     }
 }
 
 /* the flexbox magic */
 @media screen and (min-width: 768px) {
-    .the-grid-section {
+    .grid-section {
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
@@ -39,7 +27,7 @@
                 justify-content: space-between;
     }
 
-    .the-grid {
+    .grid-item {
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
@@ -50,7 +38,7 @@
 }
 
 @media screen and (min-width: 1000px) {
-    .the-grid {
+    .grid-item {
         -webkit-flex: 0 1 calc(33% - 1em);
             -ms-flex: 0 1 calc(33% - 1em);
                 flex: 0 1 calc(33% - 1em);
@@ -58,7 +46,7 @@
 }
 
 @media screen and (min-width: 1500px) {
-    .the-grid {
+    .grid-item {
         -webkit-flex: 0 1 calc(25% - 1em);
             -ms-flex: 0 1 calc(25% - 1em);
                 flex: 0 1 calc(25% - 1em);
