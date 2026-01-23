@@ -7,7 +7,7 @@ This is a classic "News Paper" styled theme. In remembrance of eye friendly UI/U
 
 ## Future Features to be Added
 I plan on creating a full WordPress Theme by end of 2026, which will have the following features:
-1. Navigation Menu - Sliding Mobile sidebar with two levels
+1. Navigation Menu - Add two levels of nesting
 2. Pagination
 3. Advert spaces
 4. Video & Audio Player which supports - YouTube, Vimeo and Sound Cloud
@@ -15,16 +15,22 @@ I plan on creating a full WordPress Theme by end of 2026, which will have the fo
 6. Google Map Support
 7. Woocommerce support
 
-## Add Dev Dependencies
-###### Installation Command/s
+## Dev Dependencies
+###### Auto Installation Dev Dependencies from package.json
 
 ```
-npm i jquery sass webpack webpack-cli --save-dev
+npm install
 ```
 
-###### Source of Dependencies
+### OR
 
-JQuery - https://code.jquery.com/
+###### Manually Installation Dev Dependencies
+
+```
+npm i sass webpack webpack-cli --save-dev
+```
+
+###### Source of Dev Dependencies
 
 SASS - https://sass-lang.com/install
 
