@@ -54,3 +54,24 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+    transition: var(--transition);
+
+    &:hover {
+        background-color: var(--secondary-color);
+        color: white;
+    }
+}
