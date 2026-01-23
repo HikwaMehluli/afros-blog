@@ -11,14 +11,14 @@
 :root {
     --primary-color: #03021c;
     --secondary-color: #2525b7;
-    --white: white;
+    --white: #f3f3f3;
     --black: #03021c;
-    --grey: #b8b6cd;
+    --grey: #b5b2d2;
     --transition: all .5s;
 }
 
 [data-theme="dark"] {
-    --primary-color: white;
+    --primary-color: #f3f3f3;
     --secondary-color: #4040f5;
     --white: #03021c;
 }
