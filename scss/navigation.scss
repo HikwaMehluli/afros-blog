@@ -144,17 +144,26 @@ body.nav-open {
         }
     }
 
-    // Links
-    a {
-        color: var(--primary-color);
-        display: block;
-        padding: 10px 5%;
-        text-decoration: none;
-        font-size: 18px;
-        transition: var(--transition);
+    .nav-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
 
-        &:hover {
-            color: var(--secondary-color);
+        li {
+            margin: 0;
+
+            a {
+                color: var(--primary-color);
+                display: block;
+                padding: 10px 5%;
+                text-decoration: none;
+                font-size: 18px;
+                transition: var(--transition);
+
+                &:hover {
+                    color: var(--secondary-color);
+                }
+            }
         }
     }
 
