@@ -1,4 +1,15 @@
-// Navigation menu styles
+body.nav-open {
+    // Account for scrollbar width when navigation is open to prevent layout shift
+    padding-right: calc(100vw - 100%); // Compensate for scrollbar width
+    overflow: hidden;
+
+    // Ensure menu trigger stays in place when nav is open
+    .menu-trigger {
+        top: 3vw; // Maintain consistent position
+        z-index: 30; // Ensure it stays on top even when nav is open
+    }
+}
+
 .menu-trigger {
     position: absolute;
     top: 3vw;
@@ -33,27 +44,6 @@
     }
 }
 
-// Ensure menu trigger stays in place when nav is open
-body.nav-open {
-    .menu-trigger {
-        top: 3vw; // Maintain consistent position
-        z-index: 30; // Ensure it stays on top even when nav is open
-    }
-}
-
-// Make sure header stays in place and doesn't shift
-header {
-    position: relative; // Keep original positioning
-    z-index: 15; // Just below menu-trigger
-    padding-left: 50px; // Add padding to account for menu trigger space
-}
-
-// Account for scrollbar width when navigation is open to prevent layout shift
-body.nav-open {
-    padding-right: calc(100vw - 100%); // Compensate for scrollbar width
-    overflow: hidden;
-}
-
 // Active state for hamburger when menu is open (transforms to X)
 .menu-trigger.active {
     span:nth-child(1) {
@@ -68,6 +58,8 @@ body.nav-open {
         transform: rotate(45deg) translate(-5px, -6px);
     }
 }
+
+
 
 .nav-menu {
     background-color: var(--white);
@@ -185,10 +177,6 @@ body.nav-open {
             transform: translateX(0); // Slide in completely using transform
         }
     }
-
-    header {
-        padding-left: 50px; // Same padding on mobile
-    }
 }
 
 @media screen and (max-height: 450px) {
@@ -201,7 +189,9 @@ body.nav-open {
     }
 }
 
+//
 // Overlay effect when nav is open
+// 
 .content-overlay {
     position: fixed;
     top: 0;
