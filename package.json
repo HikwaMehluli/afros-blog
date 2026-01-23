@@ -1,19 +1,17 @@
 {
 	"name": "afros-blog",
-	"version": "1.0.5",
+	"version": "1.5.0",
 	"description": "This is a classic \"News Paper\" styled theme created for afrosblog",
 	"author": "Mehluli Hikwa",
 	"license": "ISC",
 	"scripts": {
-		"css-prod": "sass --no-source-map --watch scss/_entry.scss:css/app.css --style compressed",
-		"css-dev": "sass --no-source-map --watch scss/_entry.scss:css/app.css",
-		"js-prod": "webpack --mode production --watch",
-		"js-dev": "webpack --mode development --watch"
+		"css-prod": "sass --no-source-map --watch scss/_entry.scss:dist/app.css --style compressed",
+		"js-prod": "webpack --mode production --watch"
 	},
 	"devDependencies": {
-		"jquery": "^3.6.0",
-		"sass": "^1.35.1",
-		"webpack": "^5.42.0",
-		"webpack-cli": "^4.7.2"
+		"jquery": "^4.0.0",
+		"sass": "^1.97.3",
+		"webpack": "^5.104.1",
+		"webpack-cli": "^6.0.1"
 	}
 }

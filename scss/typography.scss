@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Playfair+Display&display=swap');
+
 *,
 *:after,
 *:before {
@@ -74,6 +76,15 @@ img {
     Create A Dark/Light Mode Switch with CSS Variables
     Source: https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8
 ***************************************************/
+:root {
+    --primary-color: #2a2a2a;
+    --secondary-color: #439c47;
+    --white: white;
+    --black: black;
+    --grey: #ccc;
+    --transition: all .5s;
+}
+
 [data-theme="dark"] {
     --primary-color: white;
     --secondary-color: #439c47;

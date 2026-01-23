@@ -1,4 +1,4 @@
-import './_main.js';
-// import './_menu.js';
-import './_dark-mode.js';
+import './dark-mode.js';
+// import './menu.js';
 
+// Your other JavaScript code can go here
