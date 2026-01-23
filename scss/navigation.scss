@@ -23,16 +23,16 @@ body.nav-open {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: top 0.3s ease; // Smooth transition for position
+    transition: top 0.5s ease; // Smooth transition for position
 
     // Hamburger lines
     span {
         display: block;
         width: 100%;
-        height: 3px;
+        height: 4px;
         background-color: var(--primary-color);
-        margin: 2px 0;
-        transition: 0.3s;
+        margin: 3px 0;
+        transition: 0.5s;
         border-radius: 2px;
     }
 
@@ -47,7 +47,7 @@ body.nav-open {
 // Active state for hamburger when menu is open (transforms to X)
 .menu-trigger.active {
     span:nth-child(1) {
-        transform: rotate(-45deg) translate(-5px, 6px);
+        transform: rotate(-45deg) translate(-7px, 8px);
     }
 
     span:nth-child(2) {
@@ -55,11 +55,9 @@ body.nav-open {
     }
 
     span:nth-child(3) {
-        transform: rotate(45deg) translate(-5px, -6px);
+        transform: rotate(45deg) translate(-6px, -7px);
     }
 }
-
-
 
 .nav-menu {
     background-color: var(--white);
@@ -72,7 +70,7 @@ body.nav-open {
     left: 0;
     transform: translateX(-100%); // Start off-screen for slide effect using transform
     overflow-x: hidden;
-    transition: transform 0.3s ease; // Use transform for smoother, more performant animation
+    transition: transform 0.5s ease; // Use transform for smoother, more performant animation
     z-index: 20; // Lower than menu-trigger to ensure menu trigger is visible
 
     .close-menu-trigger {
@@ -93,10 +91,10 @@ body.nav-open {
         span {
             display: block;
             width: 100%;
-            height: 3px;
+            height: 4px;
             background-color: var(--primary-color);
-            margin: 2px 0;
-            transition: 0.3s;
+            margin: 3px 0;
+            transition: 0.5s;
             border-radius: 2px;
         }
 
@@ -108,11 +106,14 @@ body.nav-open {
         }
     }
 
-    // Active state for close button inside nav (shows as X)
     &.active {
+        // Active state for nav menu when open
+        transform: translateX(0); // Slide in from left using transform
+
+        // Active state for close button inside nav (shows as X)
         .close-menu-trigger {
             span:nth-child(1) {
-                transform: rotate(-45deg) translate(-3px, 5px);
+                transform: rotate(-45deg) translate(-7px, 8px);
             }
 
             span:nth-child(2) {
@@ -120,19 +121,29 @@ body.nav-open {
             }
 
             span:nth-child(3) {
-                transform: rotate(45deg) translate(-5px, -7px);
+                transform: rotate(45deg) translate(-6px, -7px);
             }
         }
     }
 
+    .greeting {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        width: 175px;
+
+        p {
+            color: var(--primary-color);
+            margin: 0;
+        }
+    }
+
     .profile {
-        // Profile Image
+        margin: 10px 15px;
+        
         img {
             border-radius: 50%;
-            width: 50%;
-            // padding-bottom: 20px;
-            margin-left: auto;
-            margin-right: auto;
+            width: 120px;
         }
     }
 
@@ -158,12 +169,6 @@ body.nav-open {
             }
         }
     }
-
-}
-
-// Active state for nav menu when open
-.nav-menu.active {
-    transform: translateX(0); // Slide in from left using transform
 }
 
 // Mobile responsive: 100% width on screens 400px and below
@@ -203,18 +208,20 @@ body.nav-open {
     z-index: 5; // Below the nav-menu but above content
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
 }
 
-.content-overlay.active {
-    opacity: 1;
-    visibility: visible;
-}
-
+//
 // Apply blur to main and header when nav is open
+//
 main,
 header {
-    transition: filter 0.3s ease;
+    transition: filter 0.5s ease;
 }
 
 main.blurred,
