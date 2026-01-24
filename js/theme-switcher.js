@@ -1,31 +1,17 @@
-const toggleSwitch = document.querySelector('.theme-switcher__checkbox input[type="checkbox"]');
+const themeToggle = document.getElementById('theme-toggle');
 
-function switchTheme(e) {
-	if (e.target.checked) {
-		document.documentElement.setAttribute('data-theme', 'dark');
-	} else {
-		document.documentElement.setAttribute('data-theme', 'light');
-	}
-}
-toggleSwitch.addEventListener('change', switchTheme, false);
+// Function to update theme
+function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const isCurrentlyDark = currentTheme === 'dark';
 
-// Store the user preference for future visits
-function switchTheme(e) {
-	if (e.target.checked) {
-		document.documentElement.setAttribute('data-theme', 'dark');
-		localStorage.setItem('theme', 'dark');
-	} else {
-		document.documentElement.setAttribute('data-theme', 'light');
-		localStorage.setItem('theme', 'light');
-	}
+    if (isCurrentlyDark) {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('NewsPaperTheme', 'light');
+    } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('NewsPaperTheme', 'dark');
+    }
 }
 
-// Check for saved user preference, if any, load on website reopening
-const currentTheme = localStorage.getItem('theme');
-if (currentTheme) {
-	document.documentElement.setAttribute('data-theme', currentTheme);
-
-	if (currentTheme === 'dark') {
-		toggleSwitch.checked = true;
-	}
-}
+themeToggle.addEventListener('click', toggleTheme);

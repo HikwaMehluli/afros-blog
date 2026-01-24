@@ -1,9 +1,9 @@
 # Afros Blog
-This is a classic "News Paper" styled theme. In remembrance of eye friendly UI/UX design when print was "King" - solely focused on information sharing and the simplicity of design.
+This is a classic "News Paper" styled theme. In remembrance of eye friendly UI/UX design when print was "King" - solely focused on information sharing and the simplicity of minimalist design.
 
 ## Features
-1. Mobile Responsive, on all major devices and modern web browsers
-2. Light & Dark Mode, takes advantage of browser "localStorage function"
+1. Mobile Responsive Layout
+2. Light & Dark Mode, utilizing browser/device localStorage
 
 ## Future Features to be Added
 I plan on creating a full WordPress Theme by end of 2026, which will have the following features:

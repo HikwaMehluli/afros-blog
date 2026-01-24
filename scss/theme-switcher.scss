@@ -1,57 +1,52 @@
 .theme-switcher {
-    display: flex;
-    position: relative;
-    margin-top: 20px;
-    align-items: center;
-
-    .theme-switcher__checkbox {
-        display: inline-block;
-        height: 35px;
-        position: initial;
-        width: 60px;
-        max-width: 60px;
-
-        input {
-            display: none;
-        }
-
-        input:checked+.knob-background {
-            background-color: var(--secondary-color);
-
-            &:before {
-                transform: translateX(25px);
-            }
-        }
-    }
+    position: absolute;
+    top: 2vw;
+    right: 15px;
+    width: 30px;
+    height: 30px;
 }
 
-.knob-background {
-    background-color: var(--grey);
+.theme-switcher__btn {
+    background-color: var(--primary-color);
     bottom: 0;
     cursor: pointer;
     position: absolute;
-    left: 5%;
+    left: 0;
     top: 0;
     transition: var(--transition);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
 
-    width: 60px;
-
-    &:before {
-        background-color: var(--white);
-        bottom: 5px;
-        content: "";
-        height: 25px;
-        left: 5px;
+    .sun-icon,
+    .moon-icon {
         position: absolute;
-        transition: var(--transition);
-        width: 25px;
+        width: 20px;
+        height: 20px;
+        transition: all 0.3s ease;
+        fill: var(--white);
     }
 
-    &.knob {
-        border-radius: 35px;
+    .sun-icon {
+        opacity: 1;
+    }
 
-        &:before {
-            border-radius: 50%;
-        }
+    .moon-icon {
+        opacity: 0;
+    }
+}
+
+/* Dark theme state for icons */
+[data-theme="dark"] #theme-toggle .theme-switcher__btn {
+    .sun-icon {
+        opacity: 0;
+    }
+
+    .moon-icon {
+        opacity: 1;
     }
 }

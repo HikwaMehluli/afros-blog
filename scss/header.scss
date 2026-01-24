@@ -1,7 +1,7 @@
 header {
     // Make sure header stays in place and doesn't shift
     position: relative; // Keep original positioning
-    z-index: 15; // Just below menu-trigger
+    z-index: 5; // Just below menu-trigger
 
     h1.news-paper-title {
         margin: 0;
